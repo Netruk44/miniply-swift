@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D597C4392BE1862600823E9F /* miniply_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597C4382BE1862600823E9F /* miniply_swift.swift */; };
+		D597C4482BE1866700823E9F /* miniply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D597C4462BE1866700823E9F /* miniply.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		D597C4352BE1862600823E9F /* libminiply-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libminiply-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D597C4382BE1862600823E9F /* miniply_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniply_swift.swift; sourceTree = "<group>"; };
+		D597C4452BE1866700823E9F /* miniply-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "miniply-swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		D597C4462BE1866700823E9F /* miniply.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = miniply.cpp; path = miniply/miniply.cpp; sourceTree = "<group>"; };
+		D597C4472BE1866700823E9F /* miniply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = miniply.h; path = miniply/miniply.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +45,11 @@
 		D597C42C2BE1862600823E9F = {
 			isa = PBXGroup;
 			children = (
+				D597C4462BE1866700823E9F /* miniply.cpp */,
+				D597C4472BE1866700823E9F /* miniply.h */,
 				D597C4372BE1862600823E9F /* miniply-swift */,
 				D597C4362BE1862600823E9F /* Products */,
+				D597C4452BE1866700823E9F /* miniply-swift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,7 @@
 				TargetAttributes = {
 					D597C4342BE1862600823E9F = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -120,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D597C4482BE1866700823E9F /* miniply.cpp in Sources */,
 				D597C4392BE1862600823E9F /* miniply_swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,12 +258,16 @@
 		D597C43D2BE1862600823E9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SU787HSYK9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_OBJC_BRIDGING_HEADER = "miniply-swift-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
@@ -263,12 +276,15 @@
 		D597C43E2BE1862600823E9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SU787HSYK9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_OBJC_BRIDGING_HEADER = "miniply-swift-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};

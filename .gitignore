@@ -1,0 +1,25 @@
+# Finder
+.DS_Store
+
+# Xcode - User files
+xcuserdata/
+*.rcuserdata
+
+**/*.xcodeproj/project.xcworkspace/*
+!**/*.xcodeproj/project.xcworkspace/xcshareddata
+
+**/*.xcodeproj/project.xcworkspace/xcshareddata/*
+!**/*.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+**/*.playground/playground.xcworkspace/*
+!**/*.playground/playground.xcworkspace/xcshareddata
+
+**/*.playground/playground.xcworkspace/xcshareddata/*
+!**/*.playground/playground.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# RealityKit Build
+Packages/RealityKitContent/.build/
+
+# Swift build
+main
+*.dSYM/
