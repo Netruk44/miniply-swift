@@ -24,6 +24,9 @@ dependencies: [
 ]
 ```
 
+In addition, you will need to change your Swift project's build settings to use Objective-C++. To do this, go to your project's settings and go to the "Build Settings" tab. Search for "Interop" to find the `C++ and Objective-C Interoperability` setting, and set it to "C++ / Objective-C++".
+
+
 ## Usage
 
 Here's a basic example of how to use `miniply-swift` to load a `.ply` file:
