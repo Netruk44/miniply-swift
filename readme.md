@@ -2,7 +2,8 @@
 
 `miniply-swift` is a Swift wrapper for the [miniply](https://github.com/vilya/miniply) C++ library, designed to simplify the process of loading .ply files in your Swift projects.
 
-> **Warning**: This wrapper is not complete. The only functionality implemented is loading of basic property types (int, float, double, etc.) from a `.ply` file. List property types are not supported.
+> [!WARNING]  
+> This wrapper is not complete. The only functionality implemented is loading of basic property types (int, float, double, etc.) from a `.ply` file. List property types are not supported.
 >
 > Pull requests are welcome!
 
