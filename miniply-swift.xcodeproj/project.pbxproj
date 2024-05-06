@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D597C4392BE1862600823E9F /* miniply_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597C4382BE1862600823E9F /* miniply_swift.swift */; };
+		D507664E2BE1D9FB005E4453 /* PlyReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507664D2BE1D9FB005E4453 /* PlyReader.swift */; };
 		D597C4482BE1866700823E9F /* miniply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D597C4462BE1866700823E9F /* miniply.cpp */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D507664D2BE1D9FB005E4453 /* PlyReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlyReader.swift; sourceTree = "<group>"; };
 		D597C4352BE1862600823E9F /* libminiply-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libminiply-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D597C4382BE1862600823E9F /* miniply_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniply_swift.swift; sourceTree = "<group>"; };
 		D597C4452BE1866700823E9F /* miniply-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "miniply-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		D597C4462BE1866700823E9F /* miniply.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = miniply.cpp; path = miniply/miniply.cpp; sourceTree = "<group>"; };
 		D597C4472BE1866700823E9F /* miniply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = miniply.h; path = miniply/miniply.h; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		D597C4372BE1862600823E9F /* miniply-swift */ = {
 			isa = PBXGroup;
 			children = (
-				D597C4382BE1862600823E9F /* miniply_swift.swift */,
+				D507664D2BE1D9FB005E4453 /* PlyReader.swift */,
 			);
 			path = "miniply-swift";
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D597C4482BE1866700823E9F /* miniply.cpp in Sources */,
-				D597C4392BE1862600823E9F /* miniply_swift.swift in Sources */,
+				D507664E2BE1D9FB005E4453 /* PlyReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
