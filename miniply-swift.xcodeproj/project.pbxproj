@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D507664E2BE1D9FB005E4453 /* PlyReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507664D2BE1D9FB005E4453 /* PlyReader.swift */; };
-		D597C4482BE1866700823E9F /* miniply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D597C4462BE1866700823E9F /* miniply.cpp */; };
+		D59193682BE9762400277A91 /* miniply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D59193662BE9762400277A91 /* miniply.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +25,11 @@
 
 /* Begin PBXFileReference section */
 		D507664D2BE1D9FB005E4453 /* PlyReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlyReader.swift; sourceTree = "<group>"; };
+		D591935B2BE973DF00277A91 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		D59193662BE9762400277A91 /* miniply.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = miniply.cpp; path = miniply/miniply.cpp; sourceTree = SOURCE_ROOT; };
+		D59193672BE9762400277A91 /* miniply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = miniply.h; path = miniply/miniply.h; sourceTree = SOURCE_ROOT; };
 		D597C4352BE1862600823E9F /* libminiply-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libminiply-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D597C4452BE1866700823E9F /* miniply-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "miniply-swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		D597C4462BE1866700823E9F /* miniply.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = miniply.cpp; path = miniply/miniply.cpp; sourceTree = "<group>"; };
-		D597C4472BE1866700823E9F /* miniply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = miniply.h; path = miniply/miniply.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,12 +43,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D591935A2BE973AB00277A91 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D591935D2BE974D400277A91 /* miniply-swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D591935C2BE974AF00277A91 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D591935D2BE974D400277A91 /* miniply-swift */ = {
+			isa = PBXGroup;
+			children = (
+				D59193662BE9762400277A91 /* miniply.cpp */,
+				D59193672BE9762400277A91 /* miniply.h */,
+				D507664D2BE1D9FB005E4453 /* PlyReader.swift */,
+			);
+			path = "miniply-swift";
+			sourceTree = "<group>";
+		};
 		D597C42C2BE1862600823E9F = {
 			isa = PBXGroup;
 			children = (
-				D597C4462BE1866700823E9F /* miniply.cpp */,
-				D597C4472BE1866700823E9F /* miniply.h */,
-				D597C4372BE1862600823E9F /* miniply-swift */,
+				D591935C2BE974AF00277A91 /* Tests */,
+				D591935B2BE973DF00277A91 /* Package.swift */,
+				D591935A2BE973AB00277A91 /* Sources */,
 				D597C4362BE1862600823E9F /* Products */,
 				D597C4452BE1866700823E9F /* miniply-swift-Bridging-Header.h */,
 			);
@@ -59,14 +85,6 @@
 				D597C4352BE1862600823E9F /* libminiply-swift.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D597C4372BE1862600823E9F /* miniply-swift */ = {
-			isa = PBXGroup;
-			children = (
-				D507664D2BE1D9FB005E4453 /* PlyReader.swift */,
-			);
-			path = "miniply-swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D597C4482BE1866700823E9F /* miniply.cpp in Sources */,
+				D59193682BE9762400277A91 /* miniply.cpp in Sources */,
 				D507664E2BE1D9FB005E4453 /* PlyReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
