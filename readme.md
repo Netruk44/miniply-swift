@@ -14,7 +14,8 @@
 
 ## Installation
 
-> **Warning**: These instructions are untested. Please let me know if you encounter any issues.
+> [!WARNING]  
+> These instructions are untested. Please let me know if you encounter any issues.
 
 You can install `miniply-swift` using the Swift Package Manager. Add the following to your `Package.swift` file:
 
