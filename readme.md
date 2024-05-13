@@ -4,8 +4,6 @@
 
 > [!WARNING]  
 > This wrapper is not complete. The only functionality implemented is loading of basic property types (int, float, double, etc.) from a `.ply` file. List property types are not supported.
->
-> Pull requests are welcome!
 
 ## Features
 * Swift-friendly API for loading .ply files.
